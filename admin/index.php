@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
 		$fetch = mysqli_fetch_array($exe);
 		session_start();
 		$_SESSION['id'] = $fetch['id'];
-		echo '<script>window.location="home.php?cat=recent"</script>';
+		echo '<script>window.location="home.php?cat=all"</script>';
 	}
 	else
 	{
